@@ -44,8 +44,8 @@ public class Command {
 
     public static void sendfriendlist(){
         int i =0;
+        sendMsg("Friends: \n");
         while(friends.size() > i){
-            sendMsg("Friends: \n");
             sendMsg(friends.get(i));
             i++;
         }

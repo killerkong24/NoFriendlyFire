@@ -60,7 +60,7 @@ public class Friends {
     }
     public static void removeFriend(String username){
         friends.remove(username);
-        friends.remove("");
+        friends.remove("\n");
         sendMsg("removed friend named: "+ username);
         save();
     }
